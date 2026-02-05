@@ -1,0 +1,90 @@
+.python-icon{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+}
+.pyicon{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    row-gap: 6px;
+}
+.py-head{
+    position: relative;
+    width: 100px;
+    height: 44px;
+    background: #3372a1;
+    border-radius: 50% 50% 0 0;
+
+}
+.py-lower{
+    background: #ffd63d;
+    border-radius: 0 0 50% 50%;
+}
+.py-head::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+}
+.py-uper::before{
+    margin-top: 3px;
+    left: 10px;
+}
+.py-lower::before{
+    right: 10px;
+    margin-top: -3px;
+}
+.py-head::after{
+    content: "";
+    width: 50px;
+    height: 6px;
+    position: absolute;
+    background: #3372a1;
+}
+.py-uper::after{
+    bottom: -6px;
+    right: 0;
+}
+.py-lower::after{
+    top: -6px;
+    background: #ffd63d;
+}
+.py-boby{
+    position: relative;
+    width: 100px;
+    height: 80px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #3372a1, 50%, #ffd63d 50%);
+}
+.py-boby::after,.py-boby::before{
+    content: "";
+    width: 50px;
+    height: 40px;
+    right: 35px;
+    position: absolute;
+    background: #3372a1;
+}
+.py-boby::after{
+    border-radius: 0 0 33px 0;
+    /* border-right: 5px solid #fff; */
+    border-bottom : 5px solid #fff;
+}
+.py-boby::after{
+
+    /* right: 90px; */
+    bottom: 0;
+    height: 35px;
+    border-radius: 33px 0 0 0;
+    background: #ffd63d;
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+}
