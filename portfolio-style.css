@@ -269,7 +269,6 @@ header {
 }
 .service-box {
     height: 110px;
-    /* padding: 0 10px; */
     background-color: transparent;
     color: #333;
     display: flex;
@@ -279,8 +278,8 @@ header {
     flex-wrap: wrap;
     gap: 20px;
     border-bottom: 1px solid rgb(63, 63, 63);
-    transition: all 1S ease;
     cursor: pointer;
+    z-index: 2;
     
 }
 .service-container:has(.service-box-2:hover)::before {
@@ -303,6 +302,7 @@ header {
     color: #8750f7;
     gap: 25px;
     z-index: 2;
+    transition: all 1s ease-in-out;
 }
 
 .service-box-left span {
@@ -321,6 +321,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s ease-in-out;
     z-index: 2;
 }
 
@@ -338,7 +339,7 @@ header {
     justify-content: center;
     align-items: center;
     rotate: 50deg;
-    transition: all 0.7s ease;
+    transition: all 1s ease-in-out;
     z-index: 2;
 }
 
@@ -346,12 +347,7 @@ header {
     font-size: 30px;
     z-index: 2;
 }
-/* .service-box-1{
-    background: #8750f7;
-    border-color: white;
-    color: white;
-} */
-/* .service-box-1 div{
+.service-box-1 div{
     color: white;
 }
 .service-box-1 .service-box-right{
@@ -359,21 +355,21 @@ header {
 }
 .service-box-2:hover,
 .service-box-3:hover{
-    background: #8750f7;
     color: white;
-    border-color: white;
-} */
-/* .service-box-2:hover .service-box-left,
+}
+.service-box-2:hover .service-box-left,
 .service-box-3:hover .service-box-left{
     color:white;
 }
 .service-box-2:hover .service-box-right,
 .service-box-3:hover .service-box-right{
     rotate: -50deg;
+    color: white;
 }
 .service-container:has(.service-box-2:hover) .service-box-1,
-.service-container:has(.service-box-3:hover) .service-box-1{
-    background: transparent;
+.service-container:has(.service-box-3:hover) .service-box-2{
+    border-color: white;
+
 }
 .service-container:has(.service-box-2:hover) .service-box-1 .service-box-left,
 .service-container:has(.service-box-3:hover) .service-box-1 .service-box-left{
@@ -387,7 +383,7 @@ header {
 .service-container:has(.service-box-2:hover) .service-box-1 .service-box-mid,
 .service-container:has(.service-box-3:hover) .service-box-1 .service-box-mid{
     color: #333;
-} */
+}
 
 
 
