@@ -31,7 +31,8 @@ header {
 }
 
 .container img {
-    width: 60px;
+    width: 70px;
+    padding-bottom: 10px;
 }
 
 .container {
@@ -43,7 +44,6 @@ header {
 }
 
 .email-container a {
-    margin: 0 20px;
     padding-left: 10px;
     font-size: 15px;
     text-decoration: none;
@@ -251,22 +251,25 @@ header {
     text-align: center;
     line-height: 25px;
 }
-.service-container{
+
+.service-container {
     margin-top: 50px;
     position: relative;
     overflow-y: hidden;
 }
+
 .service-container::before {
-  content: "";
-  position: absolute;
-  top: 0PX;
-  left: 0;
-  width: 100%;
-  height: 110px;
-  background: linear-gradient(90deg, #8750f7, #3A1E71);
-  z-index: 1;
-  transition: all ease-in-out 1s;
+    content: "";
+    position: absolute;
+    top: 0PX;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(90deg, #8750f7, #3A1E71);
+    z-index: 1;
+    transition: all ease-in-out 1s;
 }
+
 .service-box {
     height: 110px;
     background-color: transparent;
@@ -280,16 +283,18 @@ header {
     border-bottom: 1px solid rgb(63, 63, 63);
     cursor: pointer;
     z-index: 2;
-    
-}
-.service-container:has(.service-box-2:hover)::before {
-  top: 110px;
-}
-.service-container:has(.service-box-3:hover)::before {
-  top: 220px;
+
 }
 
-.service-box-left { 
+.service-container:has(.service-box-2:hover)::before {
+    top: 110px;
+}
+
+.service-container:has(.service-box-3:hover)::before {
+    top: 220px;
+}
+
+.service-box-left {
     height: 80px;
     width: 400px;
     padding: 0 50px 0 20px;
@@ -310,7 +315,8 @@ header {
     text-align: left;
     z-index: 2;
 }
-.service-box-left h3{
+
+.service-box-left h3 {
     z-index: 2;
 }
 
@@ -347,42 +353,94 @@ header {
     font-size: 30px;
     z-index: 2;
 }
-.service-box-1 div{
+
+.service-box-1 div {
     color: white;
 }
-.service-box-1 .service-box-right{
+
+.service-box-1 .service-box-right {
     rotate: -50deg;
 }
+
 .service-box-2:hover,
-.service-box-3:hover{
+.service-box-3:hover {
     color: white;
 }
+
 .service-box-2:hover .service-box-left,
-.service-box-3:hover .service-box-left{
-    color:white;
+.service-box-3:hover .service-box-left {
+    color: white;
 }
+
 .service-box-2:hover .service-box-right,
-.service-box-3:hover .service-box-right{
+.service-box-3:hover .service-box-right {
     rotate: -50deg;
     color: white;
 }
+
 .service-container:has(.service-box-2:hover) .service-box-1,
-.service-container:has(.service-box-3:hover) .service-box-2{
+.service-container:has(.service-box-3:hover) .service-box-2 {
     border-color: white;
 
 }
+
 .service-container:has(.service-box-2:hover) .service-box-1 .service-box-left,
-.service-container:has(.service-box-3:hover) .service-box-1 .service-box-left{
+.service-container:has(.service-box-3:hover) .service-box-1 .service-box-left {
     color: #8750f7;
 }
+
 .service-container:has(.service-box-2:hover) .service-box-1 .service-box-right,
-.service-container:has(.service-box-3:hover) .service-box-1 .service-box-right{
+.service-container:has(.service-box-3:hover) .service-box-1 .service-box-right {
     rotate: 50deg;
     color: #333;
 }
+
 .service-container:has(.service-box-2:hover) .service-box-1 .service-box-mid,
-.service-container:has(.service-box-3:hover) .service-box-1 .service-box-mid{
+.service-container:has(.service-box-3:hover) .service-box-1 .service-box-mid {
     color: #333;
+}
+
+
+
+
+
+
+.resume{
+    background-color: rgb(231, 231, 244);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+.certificate h1,
+.education h1{
+    background: linear-gradient(90deg, #8750f7, #3A1E71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+.education, .certificate{
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+}
+.education-box1, .cetificte-box1{
+    width: 500;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.education-box1 h5{
+    color:#8750f7;
 }
 
 
@@ -415,14 +473,15 @@ header {
     width: 700px;
     text-align: center;
     line-height: 25px;
+    
 }
 
 .skill-cards {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    /* background-color: white; */
 }
 
 .skill-card-icon {
@@ -718,11 +777,31 @@ header {
 
 
 
-footer {
-    background: #111;
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #3a1e7155;
     color: white;
     text-align: center;
-    padding: 15px;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.footer-logo {
+    width: 70px;
+    cursor: pointer;
+}
+.footer-items {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.footer-items li a {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -744,4 +823,27 @@ footer {
 #skills,
 #contact {
     scroll-margin-top: 150px;
+}
+
+
+
+@media (max-width: 768px) {
+    
+
+
+
+    .service h1{
+        font-size: 30px;
+    }
+    .service p{
+        width: 95%;
+    }
+
+
+    .skill h1{
+        font-size: 30px;
+    }
+    .skill p{
+        width: 95%;
+    }
 }
