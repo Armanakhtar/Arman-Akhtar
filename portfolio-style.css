@@ -1070,5 +1070,6 @@ header {
     .nav-links .hire {
         width: 30%;
         font-size: 10px;
+        padding: auto;
     }
 }
