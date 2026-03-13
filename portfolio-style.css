@@ -11,7 +11,7 @@ body {
     padding: 35px 0 20px 0;
     width: 100%;
     height: 80px;
-    background: white;  
+    background: white;
     display: flex;
     gap: 5%;
     justify-content: center;
@@ -36,6 +36,7 @@ header {
     align-items: flex-start;
     gap: 20px;
 }
+
 .container img {
     width: 70px;
     padding-bottom: 10px;
@@ -98,7 +99,8 @@ header {
 .hire:hover {
     background-color: darkblue;
 }
-.menubar{
+
+.menubar {
     font-size: 25px;
     display: none;
     cursor: pointer;
@@ -117,11 +119,12 @@ header {
 }
 
 .hero-image {
-    position:absolute;
+    position: absolute;
     background-color: transparent;
-    top:0;
+    top: 0;
     right: 7%;
 }
+
 .hero-image img {
     width: 430px;
     object-fit: cover;
@@ -134,6 +137,7 @@ header {
     rotate: 0deg;
     outline: 2px solid rgb(93, 83, 236);
 }
+
 .hero-text {
     width: 45%;
     display: flex;
@@ -164,7 +168,7 @@ header {
     text-align: left;
     font-size: 20px;
     line-height: 1.6;
-     margin: 0 0 60px 40px;
+    margin: 0 0 60px 40px;
 }
 
 
@@ -408,7 +412,7 @@ header {
 
 
 
-.resume{
+.resume {
     width: 100%;
     background-color: rgb(231, 231, 244);
     display: flex;
@@ -416,15 +420,17 @@ header {
     flex-wrap: wrap;
     gap: 50px;
 }
-.education, .certificate{
+
+.education, .certificate {
     display: flex;
     flex-direction: column;
     gap: 30px;
     padding: 10px;
     margin: 100px 0 100px 20px;
 }
+
 .certificate h1,
-.education h1{
+.education h1 {
     background: linear-gradient(90deg, #8750f7, #3A1E71);
     -webkit-background-clip: text;
     background-clip: text;
@@ -433,7 +439,7 @@ header {
 }
 
 
-.education-box1, .certificte-box1, .certificte-box2, .certificte-box3, .certificte-box4, .certificte-box5{
+.education-box1, .certificte-box1, .certificte-box2, .certificte-box3, .certificte-box4, .certificte-box5 {
     width: 520px;
     background-color: white;
     border-radius: 10px;
@@ -443,16 +449,17 @@ header {
     gap: 10px;
 }
 
-.education-box1 h4{
-    color:#8750f7;
+.education-box1 h4 {
+    color: #8750f7;
 }
 
 
-.education-box1:hover, .certificte-box1:hover, .certificte-box2:hover, .certificte-box3:hover, .certificte-box4:hover, .certificte-box5:hover{
+.education-box1:hover, .certificte-box1:hover, .certificte-box2:hover, .certificte-box3:hover, .certificte-box4:hover, .certificte-box5:hover {
     background: linear-gradient(90deg, #8750f7, #3A1E71);
     color: white;
 }
-.education-box1:hover h4{
+
+.education-box1:hover h4 {
     color: white;
 }
 
@@ -485,7 +492,7 @@ header {
     width: 700px;
     text-align: center;
     line-height: 25px;
-    
+
 }
 
 .skill-cards {
@@ -754,7 +761,7 @@ header {
     color: white;
 }
 
-.contact-location-item-left i{
+.contact-location-item-left i {
     width: 50px;
     font-size: 22px;
     color: white;
@@ -812,6 +819,7 @@ header {
     width: 70px;
     cursor: pointer;
 }
+
 .footer-items {
     display: flex;
     gap: 20px;
@@ -849,37 +857,48 @@ header {
 
 
 @media (max-width: 1038px) {
+    header {
+    width: 25%;
+    }
     .hero-image {
-    right: 3%;
-}
-.hero-image img {
-    width: 380px;
-}
+        right: 3%;
+    }
+
+    .hero-image img {
+        width: 380px;
+    }
 
 }
 
 
 @media (max-width: 768px) {
-    .main-container{
+    .main-container {
         justify-content: space-between;
         padding: 10px 0 30px 0;
     }
-    .email-container{
+    header {
+    width: 10%;
+    }
+    .email-container {
         display: none;
     }
-    .nav-links{
+
+    .nav-links {
         width: 35%;
         justify-content: space-between;
     }
-    .nav-links .hire{
+
+    .nav-links .hire {
         width: 40%;
         font-size: 14px;
     }
-    .menubar{
+
+    .menubar {
         display: initial;
         margin-right: 20px;
     }
-    .nav-links ul{
+
+    .nav-links ul {
         position: absolute;
         top: 100px;
         left: 0;
@@ -891,6 +910,7 @@ header {
         gap: 20px;
         padding: 20px 0;
     }
+
     .nav-links ul a {
         color: #fff;
         font-size: 30px;
@@ -898,13 +918,14 @@ header {
 
 
 
-    .hero{
+    .hero {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
-    .hero-image{
+
+    .hero-image {
         width: 95%;
         display: flex;
         align-items: center;
@@ -912,28 +933,34 @@ header {
         margin: 20px;
         position: static;
     }
-    .hero-image img{
+
+    .hero-image img {
         width: 70%;
         rotate: none;
         transition: none;
         /* height: 350px; */
     }
-    .hero-text{
+
+    .hero-text {
         margin: auto;
         width: 95%;
     }
-    .hero-text span{
+
+    .hero-text span {
         font-size: 22px;
     }
-    .hero-text h1{
+
+    .hero-text h1 {
         margin-top: 5px;
         font-size: 30px;
     }
-    .hero p{
+
+    .hero p {
         margin: auto;
         width: 95%;
     }
-    .hero-buttons{
+
+    .hero-buttons {
         width: 90%;
         margin: 20px 10px;
     }
@@ -942,25 +969,29 @@ header {
 
 
 
-    .service{
+    .service {
         overflow: hidden;
     }
-    .service h1{
+
+    .service h1 {
         font-size: 30px;
     }
-    .service p{
+
+    .service p {
         width: 95%;
     }
-    .service-box{
+
+    .service-box {
         width: 90%;
         height: 300px;
     }
 
     .service-container::before {
-        height: 300px;   
+        height: 300px;
     }
+
     .service-container:has(.service-box-2:hover)::before {
-    top: 300px;
+        top: 300px;
     }
 
     .service-container:has(.service-box-3:hover)::before {
@@ -971,63 +1002,73 @@ header {
 
 
 
-    .education{
+    .education {
         width: 92%;
         margin: 0 0 100px 0;
     }
-    .certificate{
+
+    .certificate {
         width: 92%;
         margin: 100px 0 0 0;
     }
+
     .certificate h1,
-    .education h1{
+    .education h1 {
         font-size: 30px;
     }
-    .education-box1, .certificte-box1, .certificte-box2, .certificte-box3, .certificte-box4, .certificte-box5{
+
+    .education-box1, .certificte-box1, .certificte-box2, .certificte-box3, .certificte-box4, .certificte-box5 {
         width: 95%;
     }
 
-    .skill h1{
+    .skill h1 {
         font-size: 30px;
     }
-    .skill p{
+
+    .skill p {
         width: 95%;
     }
 
 
-    .contact-container{
+    .contact-container {
         width: 95%;
     }
-    .contact-container h1{
+
+    .contact-container h1 {
         width: 95%;
         font-size: 30px;
     }
-    .contact-container p{
+
+    .contact-container p {
         width: 95%;
         font-size: 16px;
     }
+
     .contact-form {
         width: 95%;
     }
+
     .contact-form select {
-    width: 98%;
-    }
-    .contact-form input{
-        width: 95%;
-    }
-    .contact-form textarea {
-    width: 95%;
+        width: 98%;
     }
 
-    .contact-loction{
+    .contact-form input {
+        width: 95%;
+    }
+
+    .contact-form textarea {
+        width: 95%;
+    }
+
+    .contact-loction {
         width: 95%;
         padding: 50px 0 0px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .nav-links .hire{
-        width: 40%;
-        font-size: 12px;
+    .nav-links .hire {
+        width: 30%;
+        font-size: 10px;
     }
 }
