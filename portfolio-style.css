@@ -59,7 +59,6 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
-    overflow: hidden;
 }
 
 .nav-links ul {
@@ -1072,8 +1071,7 @@ header {
         font-size: 10px;
     }
     .hero-buttons .hero-btn1 {
-        width: 150px;
         height: 40px;
-        font-size: 12px;
+        font-size: 10px;
     }
 }
