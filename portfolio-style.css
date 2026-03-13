@@ -872,7 +872,12 @@ header {
         justify-content: space-between;
     }
     .nav-links .hire{
-        width: 50%;
+        width: 40%;
+        font-size: 14px;
+    }
+    .menubar{
+        display: initial;
+        margin-right: 20px;
     }
     .nav-links ul{
         position: absolute;
@@ -889,9 +894,6 @@ header {
     .nav-links ul a {
         color: #fff;
         font-size: 30px;
-    }
-    .menubar{
-        display: initial;
     }
 
 
@@ -1020,5 +1022,12 @@ header {
     .contact-loction{
         width: 95%;
         padding: 50px 0 0px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links .hire{
+        width: 30%;
+        font-size: 12px;
     }
 }
